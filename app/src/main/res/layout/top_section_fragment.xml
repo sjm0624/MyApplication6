@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+
+    <TextView
+        android:id="@+id/tvSearch"
+        android:text="@string/tvSearch"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_toLeftOf="@+id/etSearch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/tvDistance"
+        android:text="@string/tvDistance"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/tvSearch"
+        android:layout_toLeftOf="@+id/etSearch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/tvCC"
+        android:text="@string/tvCC"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/tvDistance"
+        android:layout_toLeftOf="@+id/etDistance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/tvOpen"
+        android:text="@string/tvOpen"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/tvCC"
+        android:layout_toLeftOf="@+id/etDistance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+
+    <EditText
+        android:id="@+id/etSearch"
+        android:layout_alignParentRight="true"
+        android:width="200dp"
+        android:layout_marginRight="30dp"
+        android:inputType="textAutoComplete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:id="@+id/etDistance"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/etSearch"
+        android:width="200dp"
+        android:inputType="number"
+        android:layout_marginRight="30dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <ToggleButton
+        android:id="@+id/tbCC"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="140dp"
+        android:layout_below="@+id/etDistance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <ToggleButton
+        android:id="@+id/tbOpen"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="140dp"
+        android:layout_below="@+id/tbCC"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/btnSearch"
+        android:id="@+id/btnSearch"
+        android:layout_below="@+id/tbOpen"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="32dp" />
+
+
+</RelativeLayout>
